@@ -242,3 +242,82 @@ footer {
   padding: 1.4rem;
   text-align: center;
 }
+
+/* || Media Queries */
+
+@media screen and (min-width: 51.25rem) {
+  header {
+    padding: 2rem 5rem;
+  }
+
+  .mobile-menu {
+    padding: 3rem;
+    top: 5rem;
+  }
+  .hero-section {
+    padding: 5rem;
+  }
+  .hero-image {
+    width: 40rem;
+  }
+
+  .info-section {
+    padding: 5rem;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  }
+
+  h3 {
+    margin-block-end: 3rem;
+  }
+
+  .call-to-action-container {
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer {
+    padding: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .fa-bars {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .desktop-nav-link {
+    color: var(--hero-sub-text);
+  }
+
+  .hero-section {
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    gap: 5rem;
+  }
+
+  .card-container {
+    grid-template: 1fr / repeat(4, 1fr);
+  }
+
+  .call-to-action-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+  }
+
+  .call-to-action-container {
+    width: 70%;
+  }
+}
