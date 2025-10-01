@@ -39,6 +39,7 @@ h1 {
 }
 
 .fa-bars {
+  display: block;
   color: var(--hero-main-text);
   font-size: 1.2rem;
 }
@@ -289,6 +290,7 @@ footer {
 @media screen and (min-width: 85rem) {
   .fa-solid {
     display: none;
+    opacity: 0;
   }
 
   .desktop-nav {
