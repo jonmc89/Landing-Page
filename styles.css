@@ -1,0 +1,132 @@
+/* || Global */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --hero-footer-bkg: #1f2937;
+  --white: #fff;
+  --hero-main-text: #f9faf8;
+  --hero-sub-text: #e5e7eb;
+  --hero-logo-text: #f9faf8;
+  --button-colour: #3882f6;
+  --info-header-text: #1f2937;
+  --quote-bkg: #e5e7eb;
+  --quote-text: #1f2937;
+}
+
+/* || * Main */
+
+/* Header */
+
+header {
+  align-items: center;
+  background-color: var(--hero-footer-bkg);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.2rem;
+  position: relative;
+  width: 100%;
+}
+
+h1 {
+  color: var(--hero-main-text);
+  font-size: 1.2rem;
+}
+
+.fa-bars {
+  color: var(--hero-main-text);
+  font-size: 1.2rem;
+}
+
+nav {
+  display: none;
+}
+
+.mobile-menu {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 1.2rem;
+  position: absolute;
+  opacity: 0;
+  top: 3.5rem;
+  transition: opacity 0.1s ease-in-out;
+  right: 0;
+  width: 100%;
+}
+
+.mobile-menu-unhide {
+  opacity: 1;
+}
+
+a {
+  color: var(--hero-footer-bkg);
+  cursor: pointer;
+  font-size: clamp(1rem, 1.2vw, 1.4rem);
+  text-decoration: none;
+  transition: color 0.1s ease-in-out;
+}
+
+a:hover {
+  color: var(--button-colour);
+}
+
+a:active {
+  opacity: 0.7;
+}
+
+/* Hero Section */
+
+.hero-section {
+  align-items: center;
+  background-color: var(--hero-footer-bkg);
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1.2rem;
+}
+
+.hero-image {
+  height: auto;
+  width: 24rem;
+}
+
+.hero-header {
+  color: var(--hero-main-text);
+  font-size: clamp(1.5rem, 1.2vw, 3rem);
+  margin-block-end: 1.2rem;
+}
+
+.hero-sub-text {
+  color: var(--hero-sub-text);
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  line-height: 150%;
+  margin-block-end: 1.2rem;
+}
+
+.sign-up-btn {
+  background-color: var(--button-colour);
+  border-radius: 0.5rem;
+  border: none;
+  color: var(--hero-logo-text);
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-block-end: 2.5rem;
+  opacity: 0.7;
+  padding: 0.8rem;
+  transition: opacity 0.1s ease-in-out;
+  width: 8rem;
+}
+
+.sign-up-btn:hover {
+  opacity: 1;
+}
+
+.sign-up-btn:active {
+  opacity: 0.7;
+}
