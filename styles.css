@@ -151,6 +151,11 @@ figure {
   display: flex;
   flex-direction: column;
   margin-block-end: 1.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+figure:hover {
+  transform: scale(1.05);
 }
 
 .info-card-image {
