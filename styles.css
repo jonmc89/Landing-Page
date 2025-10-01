@@ -250,6 +250,10 @@ footer {
     padding: 2rem 5rem;
   }
 
+  .fa-bars {
+    display: none;
+  }
+
   .mobile-menu {
     padding: 3rem;
     top: 5rem;
