@@ -59,6 +59,7 @@ nav {
   transition: opacity 0.1s ease-in-out;
   right: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .mobile-menu-unhide {
@@ -129,4 +130,55 @@ a:active {
 
 .sign-up-btn:active {
   opacity: 0.7;
+}
+
+/* Info Section */
+
+.info-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1.2rem;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 1.2vw, 2.25rem);
+  margin-block-end: 1.5rem;
+}
+
+figure {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-block-end: 1.5rem;
+}
+
+.info-card-image {
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--button-colour);
+  height: auto;
+  margin-block-end: 1rem;
+  width: 14rem;
+}
+
+figcaption {
+  text-align: center;
+  width: 60%;
+}
+
+/* Quote Section */
+
+.quote-section {
+  background-color: var(--quote-bkg);
+  padding: 5rem 1.2rem;
+}
+
+.quote {
+  color: var(--quote-text);
+  font-size: clamp(1.2rem, 1.2vw, 2.25rem);
+  text-align: center;
+}
+
+cite {
+  color: var(--info-header-text);
 }
